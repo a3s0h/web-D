@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+height: 100vh;
+width: 100%;
+position: relative;
+overflow: hidden;
+}
+
+.main{
+    width: 50%;
+    /* background-color: aliceblue; */
+    min-width: 50%;
+    text-align: center;
+    /* margin: auto; */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,50%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tasks ul li{
+    list-style-type: none;
+}
+
+.main .container h1{
+    font-size: 2rem;
+    color: rgb(68, 67, 64);
+}
+.header{
+    padding: 20px 30px;
+    background-color:#dfa3c5;
+    width : 100%;
+    /* min-width: 80%; */
+    margin: auto;
+    border: 10px solid black;
+    border-radius: 30px;
+    transition: border-radius ease-in 2s;
+}
+.header:hover{
+    border-radius: 0%;
+}
+
+.container input{
+    padding: 10px 10px;
+    
+    border: none;
+    border-radius: 30px;
+}
+.container .bet{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container button{
+    padding: 10px 10px;
+    border: none;
+    border : 2px solid black;
+    border-radius: 30px;
+    background-color: #f5640471;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tasks{
+    width: 100%;
+    background-color: #cfbad6;
+    max-height: fit-content;
+    padding: 20px 30px;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.744);
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+ul li{
+    position: relative;
+    margin-bottom: 10px;
+}
+ul li span{
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+#box
+{
+    cursor: pointer;
+}
+.cross-icon
+{
+    position: absolute;
+    right : 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width:750px)
+{
+    .header{
+        width: 90%;
+    }
+}
